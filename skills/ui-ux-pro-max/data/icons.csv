@@ -1,0 +1,7 @@
+Category,Icon Name,Keywords,Library,Import Code,Usage,Best For,Style
+Navigation,ChevronRight,arrow right next forward,Lucide,"import { ChevronRight } from 'lucide-react'",<ChevronRight size={16} />,Navigation arrows,Outline
+Navigation,Menu,hamburger menu nav,Lucide,"import { Menu } from 'lucide-react'",<Menu size={24} />,Mobile menu toggle,Outline
+Actions,Plus,add create new,Lucide,"import { Plus } from 'lucide-react'",<Plus size={20} />,Add button,Outline
+Actions,Trash2,delete remove,Lucide,"import { Trash2 } from 'lucide-react'",<Trash2 size={16} />,Delete action,Outline
+Feedback,CheckCircle,success done complete,Lucide,"import { CheckCircle } from 'lucide-react'",<CheckCircle size={20} />,Success state,Outline
+Feedback,AlertCircle,error warning alert,Lucide,"import { AlertCircle } from 'lucide-react'",<AlertCircle size={20} />,Error state,Outline

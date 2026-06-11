@@ -1,0 +1,4 @@
+Category,Guideline,Description,Do,Don't,Code Good,Code Bad,Severity,Docs URL
+Performance,Optimize bundle size,Split code by route to reduce initial load,Use dynamic imports for heavy components,Load all components eagerly,dynamic(() => import('./Heavy')),,High,https://vitejs.dev/guide/build.html
+Accessibility,Semantic HTML,Use semantic elements for proper accessibility,Use button/nav/main/article,Use div for everything,<button type='button'>Click</button>,<div onClick={fn}>Click</div>,High,https://developer.mozilla.org/en-US/docs/Web/HTML/Element
+Animation,Transitions,Animate with transform and opacity for performance,Use transform/opacity,Animate layout properties,transform: translateY(0),top: 0px,Medium,https://web.dev/animations-guide/

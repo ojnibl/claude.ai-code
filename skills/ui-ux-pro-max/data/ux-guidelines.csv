@@ -1,0 +1,39 @@
+No,Category,Issue,Platform,Description,Do,Don't,Code Example Good,Code Example Bad,Severity
+1,Navigation,Smooth Scroll,Web,Anchor links should scroll smoothly to target section,Use scroll-behavior: smooth on html element,Jump directly without transition,html { scroll-behavior: smooth; },<a href='#section'> without CSS,High
+2,Navigation,Sticky Navigation,Web,Fixed nav should not obscure content,Add padding-top to body equal to nav height,Let nav overlap first section content,pt-20 (if nav is h-20),No padding compensation,Medium
+3,Navigation,Active State,All,Current page/section should be visually indicated,Highlight active nav item with color/underline,No visual feedback on current location,text-primary border-b-2,All links same style,Medium
+4,Navigation,Back Button,Mobile,Users expect back to work predictably,Preserve navigation history properly,Break browser/app back button behavior,history.pushState(),location.replace(),High
+5,Navigation,Deep Linking,All,URLs should reflect current state for sharing,Update URL on state/view changes,Static URLs for dynamic content,Use query params or hash,Single URL for all states,Medium
+6,Animation,Excessive Motion,All,Too many animations cause distraction and motion sickness,Animate 1-2 key elements per view maximum,Animate everything that moves,Single hero animation,animate-bounce on 5+ elements,High
+7,Animation,Duration Timing,All,Animations should feel responsive not sluggish,Use 150-300ms for micro-interactions,Use animations longer than 500ms for UI,transition-all duration-200,duration-1000,Medium
+8,Animation,Reduced Motion,All,Respect user's motion preferences,Check prefers-reduced-motion media query,Ignore accessibility motion settings,@media (prefers-reduced-motion: reduce),No motion query check,High
+9,Animation,Loading States,All,Show feedback during async operations,Use skeleton screens or spinners,Leave UI frozen with no feedback,animate-pulse skeleton,Blank screen while loading,High
+10,Animation,Hover vs Tap,All,Hover effects don't work on touch devices,Use click/tap for primary interactions,Rely only on hover for important actions,onClick handler,onMouseEnter only,High
+11,Layout,Z-Index Management,Web,Stacking context conflicts cause hidden elements,Define z-index scale system (10 20 30 50),Use arbitrary large z-index values,z-10 z-20 z-50,z-[9999],High
+12,Layout,Content Jumping,Web,Layout shift when content loads is jarring,Reserve space for async content,Let images/content push layout around,aspect-ratio or fixed height,No dimensions on images,High
+13,Layout,Viewport Units,Web,100vh can be problematic on mobile browsers,Use dvh or account for mobile browser chrome,Use 100vh for full-screen mobile layouts,min-h-dvh or min-h-screen,h-screen on mobile,Medium
+14,Touch,Touch Target Size,Mobile,Small buttons are hard to tap accurately,Minimum 44x44px touch targets,Tiny clickable areas,min-h-[44px] min-w-[44px],w-6 h-6 buttons,High
+15,Touch,Touch Spacing,Mobile,Adjacent touch targets need adequate spacing,Minimum 8px gap between touch targets,Tightly packed clickable elements,gap-2 between buttons,gap-0 or gap-1,Medium
+16,Interaction,Focus States,All,Keyboard users need visible focus indicators,Use visible focus rings on interactive elements,Remove focus outline without replacement,focus:ring-2 focus:ring-blue-500,outline-none without alternative,High
+17,Interaction,Loading Buttons,All,Prevent double submission during async actions,Disable button and show loading state,Allow multiple clicks during processing,disabled={loading} spinner,Button clickable while loading,High
+18,Interaction,Error Feedback,All,Users need to know when something fails,Show clear error messages near problem,Silent failures with no feedback,Red border + error message,No indication of error,High
+19,Interaction,Confirmation Dialogs,All,Prevent accidental destructive actions,Confirm before delete/irreversible actions,Delete without confirmation,Are you sure modal,Direct delete on click,High
+20,Accessibility,Color Contrast,All,Text must be readable against background,Minimum 4.5:1 ratio for normal text,Low contrast text,#333 on white (7:1),#999 on white (2.8:1),High
+21,Accessibility,Alt Text,All,Images need text alternatives,Descriptive alt text for meaningful images,Empty or missing alt attributes,alt='Dog playing in park',alt='' for content images,High
+22,Accessibility,ARIA Labels,All,Interactive elements need accessible names,Add aria-label for icon-only buttons,Icon buttons without labels,aria-label='Close menu',<button><Icon/></button>,High
+23,Accessibility,Keyboard Navigation,Web,All functionality accessible via keyboard,Tab order matches visual order,Keyboard traps or illogical tab order,tabIndex for custom order,Unreachable elements,High
+24,Accessibility,Form Labels,All,Inputs must have associated labels,Use label with for attribute or wrap input,Placeholder-only inputs,<label for='email'>,placeholder='Email' only,High
+25,Performance,Image Optimization,All,Large images slow page load,Use appropriate size and format (WebP),Unoptimized full-size images,srcset with multiple sizes,4000px image for 400px display,High
+26,Performance,Lazy Loading,All,Load content as needed,Lazy load below-fold images and content,Load everything upfront,loading='lazy',All images eager load,Medium
+27,Forms,Input Labels,All,Every input needs a visible label,Always show label above or beside input,Placeholder as only label,<label>Email</label><input>,placeholder='Email' only,High
+28,Forms,Error Placement,All,Errors should appear near the problem,Show error below related input,Single error message at top of form,Error under each field,All errors at form top,Medium
+29,Forms,Submit Feedback,All,Confirm form submission status,Show loading then success/error state,No feedback after submit,Loading -> Success message,Button click with no response,High
+30,Responsive,Mobile First,Web,Design for mobile then enhance for larger,Start with mobile styles then add breakpoints,Desktop-first causing mobile issues,Default mobile + md: lg: xl:,Desktop default + max-width queries,Medium
+31,Responsive,Touch Friendly,Web,Mobile layouts need touch-sized targets,Increase touch targets on mobile,Same tiny buttons on mobile,Larger buttons on mobile,Desktop-sized targets on mobile,High
+32,Responsive,Readable Font Size,All,Text must be readable on all devices,Minimum 16px body text on mobile,Tiny text on mobile,text-base or larger,text-xs for body text,High
+33,Responsive,Viewport Meta,Web,Set viewport for mobile devices,Use width=device-width initial-scale=1,Missing or incorrect viewport,<meta name='viewport'...>,No viewport meta tag,High
+34,Typography,Line Height,All,Adequate line height improves readability,Use 1.5-1.75 for body text,Cramped or excessive line height,leading-relaxed (1.625),leading-none (1),Medium
+35,Typography,Line Length,Web,Long lines are hard to read,Limit to 65-75 characters per line,Full-width text on large screens,max-w-prose,Full viewport width text,Medium
+36,Feedback,Loading Indicators,All,Show system status during waits,Show spinner/skeleton for operations > 300ms,No feedback during loading,Skeleton or spinner,Frozen UI,High
+37,Feedback,Empty States,All,Guide users when no content exists,Show helpful message and action,Blank empty screens,No items yet. Create one!,Empty white space,Medium
+38,Feedback,Toast Notifications,All,Transient messages for non-critical info,Auto-dismiss after 3-5 seconds,Toasts that never disappear,Auto-dismiss toast,Persistent toast,Medium
