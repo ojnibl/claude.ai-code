@@ -76,7 +76,7 @@ joinForm?.addEventListener('submit', e => {
   // Simulate async submission
   setTimeout(() => {
     input.value = '';
-    btn.textContent = 'You're in!';
+    btn.textContent = "You're in!";
     setTimeout(() => {
       btn.textContent = original;
       btn.disabled = false;
