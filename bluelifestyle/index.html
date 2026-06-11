@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlueLifestyle — Live with Intention</title>
+  <meta name="description" content="BlueLifestyle is your guide to elevated living — curated wellness, style, and experiences for those who choose quality over quantity." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo" aria-label="BlueLifestyle home">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M8 16C8 11.582 11.582 8 16 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M16 8C20.418 8 24 11.582 24 16C24 20.418 20.418 24 16 24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="16" cy="16" r="3" fill="currentColor"/>
+        </svg>
+        <span>Blue<strong>Lifestyle</strong></span>
+      </a>
+      <ul class="nav__links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#pillars">Pillars</a></li>
+        <li><a href="#editorial">Editorial</a></li>
+        <li><a href="#community">Community</a></li>
+      </ul>
+      <a href="#join" class="btn btn--nav">Join the Movement</a>
+      <button class="nav__burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true" role="dialog" aria-label="Mobile navigation">
+    <button class="mobile-menu__close" aria-label="Close menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <ul role="list">
+      <li><a href="#about">About</a></li>
+      <li><a href="#pillars">Pillars</a></li>
+      <li><a href="#editorial">Editorial</a></li>
+      <li><a href="#community">Community</a></li>
+      <li><a href="#join" class="btn btn--primary">Join the Movement</a></li>
+    </ul>
+  </div>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <div class="hero__bg">
+        <div class="hero__orb hero__orb--1" aria-hidden="true"></div>
+        <div class="hero__orb hero__orb--2" aria-hidden="true"></div>
+        <div class="hero__orb hero__orb--3" aria-hidden="true"></div>
+        <div class="hero__grid" aria-hidden="true"></div>
+      </div>
+      <div class="hero__inner">
+        <div class="hero__badge reveal">
+          <span class="hero__badge-dot" aria-hidden="true"></span>
+          Curated for intentional living
+        </div>
+        <h1 class="hero__heading reveal" id="hero-heading">
+          <span class="hero__line">Live with</span>
+          <span class="hero__line hero__line--accent">Blue<span class="hero__line--white">Intention</span></span>
+        </h1>
+        <p class="hero__sub reveal">
+          A curated destination for those who pursue wellness, style, and mindful experiences.
+          Less noise. More life.
+        </p>
+        <div class="hero__cta reveal">
+          <a href="#join" class="btn btn--primary btn--lg">
+            <span>Start Your Journey</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#about" class="btn btn--ghost btn--lg">Explore More</a>
+        </div>
+        <div class="hero__stats reveal">
+          <div class="hero__stat">
+            <strong>48K+</strong>
+            <span>Community Members</span>
+          </div>
+          <div class="hero__stat-divider" aria-hidden="true"></div>
+          <div class="hero__stat">
+            <strong>200+</strong>
+            <span>Curated Articles</span>
+          </div>
+          <div class="hero__stat-divider" aria-hidden="true"></div>
+          <div class="hero__stat">
+            <strong>12</strong>
+            <span>Lifestyle Pillars</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__scroll" aria-hidden="true">
+        <div class="hero__scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Wellness</span><span class="marquee__dot">·</span>
+        <span>Mindfulness</span><span class="marquee__dot">·</span>
+        <span>Style</span><span class="marquee__dot">·</span>
+        <span>Nutrition</span><span class="marquee__dot">·</span>
+        <span>Travel</span><span class="marquee__dot">·</span>
+        <span>Home</span><span class="marquee__dot">·</span>
+        <span>Movement</span><span class="marquee__dot">·</span>
+        <span>Culture</span><span class="marquee__dot">·</span>
+        <span>Wellness</span><span class="marquee__dot">·</span>
+        <span>Mindfulness</span><span class="marquee__dot">·</span>
+        <span>Style</span><span class="marquee__dot">·</span>
+        <span>Nutrition</span><span class="marquee__dot">·</span>
+        <span>Travel</span><span class="marquee__dot">·</span>
+        <span>Home</span><span class="marquee__dot">·</span>
+        <span>Movement</span><span class="marquee__dot">·</span>
+        <span>Culture</span><span class="marquee__dot">·</span>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="about__grid">
+          <div class="about__visual reveal">
+            <div class="about__card about__card--main">
+              <div class="about__card-inner">
+                <div class="about__icon" aria-hidden="true">
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                    <circle cx="24" cy="24" r="23" stroke="var(--blue-400)" stroke-width="1.5" stroke-dasharray="4 4"/>
+                    <path d="M14 24C14 18.477 18.477 14 24 14" stroke="var(--blue-500)" stroke-width="2.5" stroke-linecap="round"/>
+                    <path d="M24 14C29.523 14 34 18.477 34 24C34 29.523 29.523 34 24 34" stroke="var(--blue-700)" stroke-width="2.5" stroke-linecap="round"/>
+                    <circle cx="24" cy="24" r="4" fill="var(--blue-600)"/>
+                  </svg>
+                </div>
+                <blockquote>
+                  <p>"The blue life is not about perfection — it's about alignment."</p>
+                </blockquote>
+              </div>
+            </div>
+            <div class="about__card about__card--secondary">
+              <div class="about__metric">
+                <strong>Since 2019</strong>
+                <span>Championing intentional living</span>
+              </div>
+            </div>
+            <div class="about__float-tag" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Trusted by 48K+ members
+            </div>
+          </div>
+          <div class="about__content">
+            <div class="section__label reveal">Our Story</div>
+            <h2 class="section__heading reveal" id="about-heading">
+              We believe the best life is a <em>chosen</em> life
+            </h2>
+            <p class="section__body reveal">
+              BlueLifestyle was born from a simple conviction: that everyday living can be extraordinary when you approach it with intention. We curate the ideas, products, and practices that help you build a life that actually feels like yours.
+            </p>
+            <p class="section__body reveal">
+              From morning rituals to mindful travel, from the food you eat to the spaces you inhabit — every choice is an opportunity to align more deeply with who you are.
+            </p>
+            <div class="about__values reveal">
+              <div class="about__value">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Curated, not cluttered</span>
+              </div>
+              <div class="about__value">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Evidence-informed guidance</span>
+              </div>
+              <div class="about__value">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Community over comparison</span>
+              </div>
+            </div>
+            <a href="#join" class="btn btn--primary reveal">Discover Our Approach</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PILLARS -->
+    <section class="pillars section" id="pillars" aria-labelledby="pillars-heading">
+      <div class="container">
+        <div class="section__header reveal">
+          <div class="section__label">What We Cover</div>
+          <h2 class="section__heading" id="pillars-heading">The pillars of a blue life</h2>
+          <p class="section__sub">Six interconnected domains that form the foundation of intentional living.</p>
+        </div>
+        <div class="pillars__grid">
+          <article class="pillar-card reveal" tabindex="0">
+            <div class="pillar-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3>Wellness</h3>
+            <p>Holistic health practices, mental clarity, and the daily rituals that keep you grounded.</p>
+            <span class="pillar-card__link" aria-label="Explore Wellness">
+              Explore
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </article>
+
+          <article class="pillar-card reveal" tabindex="0">
+            <div class="pillar-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+            <h3>Mindfulness</h3>
+            <p>Presence, meditation, and the art of slowing down in a world that never stops.</p>
+            <span class="pillar-card__link" aria-label="Explore Mindfulness">
+              Explore
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </article>
+
+          <article class="pillar-card reveal" tabindex="0">
+            <div class="pillar-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+            </div>
+            <h3>Style</h3>
+            <p>Considered fashion, timeless aesthetics, and building a wardrobe with intention.</p>
+            <span class="pillar-card__link" aria-label="Explore Style">
+              Explore
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </article>
+
+          <article class="pillar-card reveal" tabindex="0">
+            <div class="pillar-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3>Home</h3>
+            <p>Spaces that restore you. Design, curation, and the psychology of environments.</p>
+            <span class="pillar-card__link" aria-label="Explore Home">
+              Explore
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </article>
+
+          <article class="pillar-card reveal" tabindex="0">
+            <div class="pillar-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3>Travel</h3>
+            <p>Slow travel, conscious exploration, and the transformative power of new perspectives.</p>
+            <span class="pillar-card__link" aria-label="Explore Travel">
+              Explore
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </article>
+
+          <article class="pillar-card reveal" tabindex="0">
+            <div class="pillar-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Community</h3>
+            <p>Real conversations, shared growth, and the people who inspire your best self.</p>
+            <span class="pillar-card__link" aria-label="Explore Community">
+              Explore
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDITORIAL -->
+    <section class="editorial section" id="editorial" aria-labelledby="editorial-heading">
+      <div class="container">
+        <div class="editorial__header reveal">
+          <div class="section__label">Latest Stories</div>
+          <h2 class="section__heading" id="editorial-heading">From the Blue Journal</h2>
+        </div>
+        <div class="editorial__grid">
+          <article class="editorial-card editorial-card--featured reveal" tabindex="0">
+            <div class="editorial-card__visual">
+              <div class="editorial-card__bg" aria-hidden="true"></div>
+              <div class="editorial-card__overlay" aria-hidden="true"></div>
+              <span class="editorial-card__tag">Wellness</span>
+            </div>
+            <div class="editorial-card__body">
+              <time class="editorial-card__date" datetime="2025-06-01">June 2025</time>
+              <h3>The morning ritual that resets everything</h3>
+              <p>How 20 minutes before the world wakes up can define the quality of your entire day.</p>
+              <a href="#" class="editorial-card__link" aria-label="Read: The morning ritual that resets everything">
+                Read Article
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="editorial-card reveal" tabindex="0">
+            <div class="editorial-card__visual editorial-card__visual--sm">
+              <div class="editorial-card__bg editorial-card__bg--2" aria-hidden="true"></div>
+              <span class="editorial-card__tag">Style</span>
+            </div>
+            <div class="editorial-card__body">
+              <time class="editorial-card__date" datetime="2025-05-20">May 2025</time>
+              <h3>Building a capsule wardrobe for real life</h3>
+              <p>Fewer pieces, more impact. A practical guide to dressing with intention.</p>
+              <a href="#" class="editorial-card__link" aria-label="Read: Building a capsule wardrobe for real life">
+                Read Article
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <article class="editorial-card reveal" tabindex="0">
+            <div class="editorial-card__visual editorial-card__visual--sm">
+              <div class="editorial-card__bg editorial-card__bg--3" aria-hidden="true"></div>
+              <span class="editorial-card__tag">Travel</span>
+            </div>
+            <div class="editorial-card__body">
+              <time class="editorial-card__date" datetime="2025-05-10">May 2025</time>
+              <h3>Slow travel: why arriving is overrated</h3>
+              <p>The case for lingering, wandering, and letting the journey lead you.</p>
+              <a href="#" class="editorial-card__link" aria-label="Read: Slow travel: why arriving is overrated">
+                Read Article
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+        <div class="editorial__cta reveal">
+          <a href="#" class="btn btn--outline">View All Stories</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE -->
+    <section class="quote-section section" aria-label="Brand quote">
+      <div class="quote-section__bg" aria-hidden="true">
+        <div class="quote-section__orb" aria-hidden="true"></div>
+      </div>
+      <div class="container">
+        <figure class="quote-block reveal">
+          <blockquote>
+            <p>"You don't find the blue life. You build it — choice by choice, day by day."</p>
+          </blockquote>
+          <figcaption>— BlueLifestyle Manifesto</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- COMMUNITY -->
+    <section class="community section" id="community" aria-labelledby="community-heading">
+      <div class="container">
+        <div class="community__grid">
+          <div class="community__content">
+            <div class="section__label reveal">Our People</div>
+            <h2 class="section__heading reveal" id="community-heading">Join a community that gets it</h2>
+            <p class="section__body reveal">
+              48,000+ people who've decided to live differently. Share your rituals, ask real questions, find your people.
+            </p>
+            <div class="community__features reveal">
+              <div class="community__feature">
+                <div class="community__feature-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                </div>
+                <div>
+                  <strong>Weekly Conversations</strong>
+                  <span>Curated discussions on living well</span>
+                </div>
+              </div>
+              <div class="community__feature">
+                <div class="community__feature-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <strong>Blue Letter</strong>
+                  <span>Monthly newsletter from the editors</span>
+                </div>
+              </div>
+              <div class="community__feature">
+                <div class="community__feature-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <div>
+                  <strong>Exclusive Guides</strong>
+                  <span>In-depth resources for members only</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="community__social reveal">
+            <div class="community__social-grid" aria-label="Community testimonials">
+              <div class="social-card">
+                <div class="social-card__avatar" aria-hidden="true">S</div>
+                <div class="social-card__body">
+                  <strong>Sarah M.</strong>
+                  <p>"BlueLifestyle changed how I think about mornings. Now I actually look forward to them."</p>
+                </div>
+              </div>
+              <div class="social-card social-card--offset">
+                <div class="social-card__avatar social-card__avatar--2" aria-hidden="true">J</div>
+                <div class="social-card__body">
+                  <strong>James K.</strong>
+                  <p>"Finally a lifestyle brand that doesn't make you feel like you need to be perfect."</p>
+                </div>
+              </div>
+              <div class="social-card">
+                <div class="social-card__avatar social-card__avatar--3" aria-hidden="true">A</div>
+                <div class="social-card__body">
+                  <strong>Amara L.</strong>
+                  <p>"The travel guides alone are worth it. They go deep in a way other sites don't."</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOIN / CTA -->
+    <section class="join section" id="join" aria-labelledby="join-heading">
+      <div class="join__bg" aria-hidden="true">
+        <div class="join__orb join__orb--1"></div>
+        <div class="join__orb join__orb--2"></div>
+      </div>
+      <div class="container">
+        <div class="join__inner reveal">
+          <div class="section__label">Get Started Free</div>
+          <h2 class="join__heading" id="join-heading">
+            Your blue life<br/>starts today
+          </h2>
+          <p class="join__sub">
+            Join thousands who wake up to a better way of living.<br/>No spam. Unsubscribe anytime.
+          </p>
+          <form class="join__form" novalidate aria-label="Newsletter signup">
+            <div class="join__form-row">
+              <label for="email-input" class="sr-only">Email address</label>
+              <input
+                type="email"
+                id="email-input"
+                name="email"
+                placeholder="your@email.com"
+                autocomplete="email"
+                required
+                aria-required="true"
+                aria-describedby="email-hint"
+              />
+              <button type="submit" class="btn btn--primary">
+                Join Now
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </button>
+            </div>
+            <p class="join__hint" id="email-hint">
+              Free forever. We send one email per week — curated, never cluttered.
+            </p>
+          </form>
+          <div class="join__trust">
+            <div class="join__trust-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>No spam, ever</span>
+            </div>
+            <div class="join__trust-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Free forever</span>
+            </div>
+            <div class="join__trust-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <span>Unsubscribe anytime</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#" class="nav__logo" aria-label="BlueLifestyle home">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <circle cx="16" cy="16" r="15" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M8 16C8 11.582 11.582 8 16 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M16 8C20.418 8 24 11.582 24 16C24 20.418 20.418 24 16 24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="16" cy="16" r="3" fill="currentColor"/>
+            </svg>
+            <span>Blue<strong>Lifestyle</strong></span>
+          </a>
+          <p>A curated guide to intentional living. For those who choose quality over quantity.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram" class="footer__social-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter / X" class="footer__social-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+            <a href="#" aria-label="Pinterest" class="footer__social-link">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 20l3-8.5M12 3C7.03 3 3 7.03 3 12c0 3.68 2.11 6.87 5.17 8.5.1-.72.18-1.82-.04-2.61l-.66-2.8s-.17.33-.17 1.04c0 1.02.59 1.78.59 1.78"/><path d="M12 3c4.97 0 9 4.03 9 9 0 3.68-2.11 6.87-5.17 8.5"/></svg>
+            </a>
+          </div>
+        </div>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <div class="footer__nav-col">
+            <h4>Explore</h4>
+            <ul role="list">
+              <li><a href="#">Wellness</a></li>
+              <li><a href="#">Mindfulness</a></li>
+              <li><a href="#">Style</a></li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Travel</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-col">
+            <h4>Company</h4>
+            <ul role="list">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-col">
+            <h4>Legal</h4>
+            <ul role="list">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Use</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 BlueLifestyle.co — All rights reserved.</p>
+        <p>Made with intention.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
